@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+	font-family: var(--font-default);
+	color: var(--text-color);
+	line-height: 1.1; 
+	font-size: 1rem; 
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background-color:rgb(16, 16, 26);
+   font-family: "Montserrat", sans-serif;
+	box-sizing: border-box;
+	overflow-x: hidden;
+
+}
+
+
+#task_list{
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  font-weight: bold;
+   background: -webkit-linear-gradient(#A020F0, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#container {
+    position: relative;
+    overflow: hidden;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+#parent_box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-wrap: wrap;
+
+}
+
+#box{
+	background-color: ghostwhite;
+	padding: 3rem;
+	width: 100%;
+	margin-top: 2rem;
+	max-width: 40rem;
+	border-radius: 1.2rem;
+	-webkit-box-shadow:0px 0px 81px 18px rgba(46,255,192,1);
+-moz-box-shadow: 0px 0px 81px 18px rgba(46,255,192,1);
+box-shadow: 0px 0px 81px 18px rgba(46,255,192,1);
+
+	
+
+}
+
+#buttons{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+}
+
+#myInput{
+	padding: 1.5rem;
+	background-color: coral;
+	border:transparent;
+	border-radius: 2rem;
+	width: 100%;
+	max-width: 20rem;
+	font-size: 1.2rem;
+}
+
+ ::placeholder{
+ 	color: white;
+
+ }
+#add_task{
+	padding: 1.5rem;
+	font-weight: bold;
+	border-radius: 2rem;
+	width: 100%;
+	max-width: 9rem;
+	font-size: 1.2rem;
+	text-decoration: none;
+
+}
+#container{
+	width: 100%;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    padding: 10px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+    background: -webkit-linear-gradient(#790947, #333,#00d4ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    
+}
+
+
+
+ul li .remove {
+	  width: 2.5rem;
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+}
+
+ul li img.checked {
+    margin-right: 2rem;
+    width: 2.5rem;
+    height: auto;
+    display: block;
+}
+
+
+
+ul li img.empty{
+	  position: absolute;
+	  left: 0.8rem;
+    width: 2.5rem;
+    height: auto;
+    display: none;
+
+}
+
+.empty_icon{
+	width: 2rem;
+
+}
